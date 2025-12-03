@@ -22,7 +22,7 @@ public class Parameter {
 		byte a = 127; // -128 ~ 127
 		short b = 32767; // -32768 ~ 32767
 		int c = 2147483647; // -2147483648 ~ 2147483647
-		long d = 9223372036854775807L;
+		long d = 9223372036854775807L; // 약 -922경 ~ 922경
 		
 		//실수형{float(4byte), double(8byte)}
 		float PI_VALUE = 3.141592f;
