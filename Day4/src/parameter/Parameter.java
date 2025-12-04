@@ -1,5 +1,7 @@
 package parameter;
 
+import java.util.Scanner;
+
 public class Parameter {
 	public static void main(String[] args) {
 		//논리형(boolean, 1byte)
@@ -27,7 +29,5 @@ public class Parameter {
 		//실수형{float(4byte), double(8byte)}
 		float PI_VALUE = 3.141592f;
 		double db = 123.2;
-		
-		
 	}
 }
