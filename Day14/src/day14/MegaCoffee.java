@@ -1,0 +1,11 @@
+package day14;
+
+public class MegaCoffee {
+
+	Coffee coffee = new Coffee();
+	Money money;
+	Coffee sell(Money money) {
+		this.money = money;
+		return coffee;
+	}
+}
