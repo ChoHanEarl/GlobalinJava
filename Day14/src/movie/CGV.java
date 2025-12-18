@@ -1,23 +1,18 @@
 package movie;
 
 public class CGV {
-	
-	Ticket[] ticket;
-	Money money;
-	
-	Ticket[] sell(Money payment, int count) {
-		if(count > 3) {
-			System.out.println("티켓 최대 3장만 가능");
-			return null;
+
+	MovieTicket[] sell(int size) {
+		
+		if( size > 3 ) return null; 
+		
+		MovieTicket[] tArr = new MovieTicket[size];
+		for( int i = 0 ; i <= size ; i ++ ) {
+			tArr[i] = new MovieTicket();
 		}
 		
-		ticket = new Ticket[count];
-		for(int i = 0; i < count; i++) {
-			ticket[i] = new Ticket();
-		}
+		return tArr;
 		
-		this.money = payment;
-		return ticket;
 	}
 	
 }

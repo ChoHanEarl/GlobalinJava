@@ -2,11 +2,16 @@ package day14;
 
 public class Guest {
 	
-	Money money = new Money();
-	Coffee coffee;
+//	Money money = new Money();
+//	Coffee coffee;
+	
+	void go(Starbucks starbucks) {
+		buy(starbucks);
+	}
+	
 	void buy(Starbucks starbucks) {
-		coffee = starbucks.sell(money);
-		money = null;
+		Coffee coffee = starbucks.sell(new Money());
+//		Money money = null;
 	}
 	
 }
