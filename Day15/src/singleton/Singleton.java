@@ -3,6 +3,7 @@ package singleton;
 public class Singleton {
 	// 실습
 	// 1. 주어진 객체를 싱글턴 패턴으로 구현하시오.
+	// - new 사용 금지 : 생성자를 private으로, static 사용
 	
 //	이렇게 바로 선언하는 것은 위험하다.
 //	실제 서버에서는 수많은 사람들이 접속하므로
