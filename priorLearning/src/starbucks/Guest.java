@@ -12,8 +12,12 @@ public class Guest {
 	}
 	
 	void buy(Starbucks starbucks) {
-		starbucks.sell(money);
-		
+		if (buyCount >= coffeeArray.length) {
+			System.out.println("초과 구매");
+			return;
+		}
+		coffeeArray[buyCount] = starbucks.sell(money);
+		buyCount++;
 	}
 	
 }

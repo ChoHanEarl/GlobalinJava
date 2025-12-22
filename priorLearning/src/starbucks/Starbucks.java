@@ -9,12 +9,15 @@ public class Starbucks {
 	}
 	
 	Coffee sell(Money guestMoney) {
+		if(Constants.ONE_CUP_PRICE >= money.won) {
+			System.out.println("잔액이 부족합니다.");
+			return null;
+		}
 		
-//		if(Constants.ONE_CUP_PRICE) {
-//			
-//		}
+		money.won += Constants.ONE_CUP_PRICE;
+		guestMoney.won -= Constants.ONE_CUP_PRICE;
 		
-		return coffee;
+		return new Coffee();
 	}
 	
 }
