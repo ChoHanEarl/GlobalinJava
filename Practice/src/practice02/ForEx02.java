@@ -68,5 +68,15 @@ public class ForEx02 {
 		} else {
 			System.out.println(num + "은(는) 소수가 아닙니다.");
 		}
+		
+		// 1부터 20까지의 정수 중 2 또는 3의 배수가 아닌 수의 총합을 구하는 코드
+		int sum = 0;
+		for(int k = 1; k <= 20; k++) {
+			if(k % 2 != 0 && k % 3 != 0) {
+				sum += k;
+			}
+		}
+		System.out.println("1~20중 2의 배수, 3의 배수가 아닌 수의 총합 : " + sum);
+		
 	}
 }
