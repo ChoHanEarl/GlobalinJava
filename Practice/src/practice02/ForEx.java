@@ -65,5 +65,38 @@ public class ForEx {
 		}
 		System.out.println("총합 : " + sum2);
 		
+		// 10개의 정수를 입력받아 그 수들 중 짝수가 몇개인지 구하기
+		int count = 0;
+		for(int i = 1; i <= 10; i++) {
+			System.out.print("정수 입력 : ");
+			int num3 = sc.nextInt();
+			if(num3 % 2 == 0) {
+				count++;
+			}
+		}
+		System.out.println("짝수의 갯수 : " + count);
+		
+		// 정수의 총합 구하기 2
+		// Scanner를 통해 정수 n1, n2를 입력받는다.
+		// n1부터 n2까지의 합을 계산하여 그 결과를 출력하는 프로그램 작성
+		// 예를 들어 2와 5를 입력받으면 2 + 3 + 4 + 5 의 연산결과인 14 출력
+		
+		System.out.print("첫 번째 정수 입력 : ");
+		int n1 = sc.nextInt();
+		System.out.print("두 번째 정수 입력 : ");
+		int n2 = sc.nextInt();
+		
+		int temp = 0;
+		if(n1 > n2) {
+			n1 = temp;
+			temp = n2;
+			n2 = n1;
+		} 
+		int sum3 = 0;
+		for(int i = n1; i <= n2; i++) {
+			sum3 += i;
+		}
+		System.out.printf("%d부터 %d까지의 합 : %d\n", n1, n2, sum3);
+		
 	}
 }
