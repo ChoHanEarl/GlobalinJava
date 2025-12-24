@@ -76,14 +76,14 @@ public class ForEx03 {
 		
 		// 다음과 같은 모양으로 출력되게 코드를 작성하시오
 		// *
-		// **
-		// ***
-		// ****
-		// *****
+		// * *
+		// * * *
+		// * * * *
+		// * * * * *
 		
 		for(int i = 1; i <= 5; i++) {
 			for(int j = 1; j <= i; j++) {
-				System.out.print("*");
+				System.out.print("* ");
 			}
 			System.out.println();
 		}
@@ -92,18 +92,55 @@ public class ForEx03 {
 		
 		// 다음과 같은 모양으로 출력되게 코드를 작성하시오
 		//     *
-		//    **
-		//   ***
-		//  ****
-		// *****
+		//    * *
+		//   * * *
+		//  * * * *
+		// * * * * *
 		
-//		for(int i = 1; i <= 5; i++) {
-//			for(int j = 5; j > j - i; j--) {
-//				System.out.print("*");
-//			}
-//			System.out.println();
-//		}
+		for(int i = 1; i <= 5; i++) {
+			for(int j = 5; j > i; j--) {
+				System.out.print(" ");
+			}
+			for(int k = 1; k <= i; k++) {
+				System.out.print(" *");
+			}
+			System.out.println();
+		}
 		
+		// 다음과 같은 모양으로 출력되게 코드를 작성하시오
+		//         *
+		//       * *
+		//     * * *
+		//   * * * *
+		// * * * * *
+		
+		for ( int i = 0; i < 5; i++ ) {
+			for ( int j = 0; j < 5 - (i + 1); j++ ) {
+				System.out.print(" ");
+			}
+			for ( int k = 1; k <= i + 1; k++ ) {
+				System.out.print("*");
+			}
+			System.out.println();
+		}
+		
+		// 다음과 같은 모양으로 출력되게 코드를 작성하시오
+		// 1 2 3 4 5 6 7 8 9 10
+		// 2 3 4 5 6 7 8 9 10 1
+		// 3 4 5 6 7 8 9 10 1 2
+		// ...
+		// 10 1 2 3 4 5 6 7 8 9
+		
+		for(int i = 1; i <= 10; i++) {
+			for(int j = 0; j < 10; j++) {
+				int num1 = i + j;
+				if(num1 > 10) {
+					num1 -= 10;
+				}
+				System.out.print(num1 + " ");
+			}
+			System.out.println();
+		}
 		
 	}
 }
