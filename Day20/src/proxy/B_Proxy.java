@@ -7,5 +7,4 @@ public class B_Proxy extends A {
 		b.a();
 		// 코드 추가 : 후처리
 	}
-	
 }
