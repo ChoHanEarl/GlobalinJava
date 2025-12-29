@@ -65,6 +65,72 @@ public class Array01 {
 			System.out.printf("%d원 : %d\n", coin[i], coinNum);
 		}
 		
+		// 로또번호 생성하기
+		// 1 ~ 45 사이의 난수를 발생시켜 로또번호를 생성하는 프로그램 만들기
+		int[] lotto = new int[6];
+		outer : for(int i = 0; i < lotto.length;) {
+			lotto[i] = new Random().nextInt(45) + 1;
+			for(int j = 0; j < i; j++) {
+				if(lotto[i] == lotto[j]) {
+					continue outer;
+				}
+			}
+			System.out.print(lotto[i] + " ");
+			i++;
+		}
+		System.out.println();
+		
+		// 배열의 모든 요소의 합을 구하여 출력하시오
+		int[][] arr3 = {
+					   {1,2,3,4,5},
+					   {6,7,8,9,10},
+					   {11,12,13,14,15},
+					   {16,17,18,19,20}
+					   };
+		int total = 0;
+		
+		for(int i = 0; i < arr3.length; i++) {
+			for(int j = 0; j < arr3[i].length; j++) {
+				total += arr3[i][j];
+			}
+		}
+		System.out.println(total);
+		
+		// 학생들의 정보를 입력하고, 출력하는 프로그램 작성하기
+		// 학생들의 수학과 영어성적을 등록하는 프로그램이 있다.
+		// 프로그램을 실행하면 몇 명의 정보를 저장할것인지 입력받은 후
+		// 입력받은 수 만큼 학생들의 이름과 수학 성적, 영어성적을 입력받는
+		// 프로그램 작성
+		
+		
+		System.out.print("등록할 인원 수 : ");
+		int student = sc.nextInt();
+		String str[][] = new String[student][3];
+
+		for( int i = 0; i < str.length; i++ ) {
+			
+			System.out.print("이름 : ");
+			str[i][0] = sc.next();
+			
+			System.out.print("수학 : ");
+			str[i][1] = "수학 : " + sc.next();
+			System.out.print("영어 : ");
+			
+			str[i][2] = "영어 : " + sc.next();
+			System.out.println("----------------");
+		
+		}
+		
+		System.out.printf("%d명 등록 완료!!\n", str.length);
+		for(int i = 0; i < str.length; i++) {
+			for(int j = 0; j < str[i].length; j++) {
+				System.out.print(str[i][j] + " ");
+			}
+			System.out.println();
+		}
+		
+		
+		
 		
 		
 	}
