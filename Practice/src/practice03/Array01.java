@@ -128,10 +128,5 @@ public class Array01 {
 			}
 			System.out.println();
 		}
-		
-		
-		
-		
-		
 	}
 }
