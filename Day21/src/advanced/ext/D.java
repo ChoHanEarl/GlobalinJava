@@ -1,8 +1,9 @@
 package advanced.ext;
 
-public class D {
+public abstract class D extends E {
 	int d;
 	void d() {
 		System.out.println(d);
 	}
+
 }

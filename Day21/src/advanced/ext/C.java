@@ -10,12 +10,16 @@ public class C extends D {
 		super.d = 20; // D클래스(부모)의 인스턴스
 		super.d();
 	}
-	
 	// 오버라이딩
 	void d() {
 		this.d = 10;
 		super.d = 20;
 		System.out.println(d);
+	}
+	
+	@Override
+	void e() {
+		// TODO Auto-generated method stub
 	}
 	
 }
