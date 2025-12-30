@@ -1,5 +1,7 @@
 package practice04;
 
+import java.util.Scanner;
+
 public class MethodTest {
 
 	// 배열의 최대값을 찾는 maxFinder 메서드
@@ -46,5 +48,42 @@ public class MethodTest {
 		System.out.println("나눗셈 몫 -> " + (a / b));
 		System.out.println("나눗셈 나머지 -> " + (a % b));
 		
+	}
+	
+	// 온도 구하기
+	// MethodTestMain 클래스에서 섭씨로 변화하고 싶으면 1,
+	// 화씨로 변화하고 싶으면 2를 입력받는다.
+	// 메서드는 MethodTest에 작성한다.
+	// fahrenheitToCelcius함수를 통해 화씨를 섭씨로 바꾸기
+	// celsiusToFahrenheit 함수를 통해 섭씨를 화씨로 바꾸기
+	// 화씨 = 1.8 * 섭씨 + 32
+	// 섭씨 = (화씨 - 32) / 1.8
+	
+	public void celsiusToFahrenheit() {
+		Scanner sc = new Scanner(System.in);
+		
+		double cel;
+		double faher;
+		
+		System.out.print("섭씨를 입력하세요 : ");
+		cel = sc.nextInt();
+		
+		faher = 1.8 * cel + 32;
+		
+		System.out.println("화씨로 변화된 온도는 " + faher + "입니다.");
+	}
+	
+	public void fahrenheitToCelcius() {
+		Scanner sc = new Scanner(System.in);
+		
+		double cel;
+		double faher;
+		
+		System.out.print("화씨를 입력하세요 : ");
+		faher = sc.nextInt();
+		
+		cel = (faher - 32) / 1.8;
+		
+		System.out.println("섭씨로 변화된 온도는 " + cel + "입니다.");
 	}
 }
