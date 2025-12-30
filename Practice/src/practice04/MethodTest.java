@@ -85,5 +85,6 @@ public class MethodTest {
 		cel = (faher - 32) / 1.8;
 		
 		System.out.println("섭씨로 변화된 온도는 " + cel + "입니다.");
+		
 	}
 }
