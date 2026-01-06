@@ -10,4 +10,8 @@ public class Member {
 		return this.jumin == ((Student)obj).jumin;
 	}
 	
+	@Override
+	public String toString() {
+		return this.id + "@" + this.jumin;
+	}
 }
